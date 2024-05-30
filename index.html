@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBRemodeling</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+    <!-- <a href="https://www.wix.com/website-template/view/html/2333?originUrl=https%3A%2F%2Fwww.wix.com%2Fwebsite%2Ftemplates%2Fhtml%2Fall%2F2&tpClick=view_button&esi=dd22917e-6bf0-4fcb-b53b-e0066004362b">Original Website H/W</a> -->
+    
+    <section id="jsdom">
+     
+    </section>
+
+   
+
+ 
+</body>
+
+<script>
+    // navbar
+   
+    const navbar = document.createElement("nav");
+    var logo = document.createElement("img");
+
+    const name = document.createElement("h2");
+    const ul = document.createElement("ul");
+    const l1 = document.createElement("li");
+    const l2 = document.createElement("li");
+    const l3 = document.createElement("li");
+    const l4 = document.createElement("li");
+    const l5 = document.createElement("li");
+    const l6 = document.createElement("li");
+    
+
+    const nameis = document.createTextNode("MB remodelling");
+    const home = document.createTextNode("home");
+    
+    logo.src = "https://i.pinimg.com/564x/b6/9e/38/b69e381bcef6dcbaa947868787399114.jpg";
+
+    l2.appendChild(document.createTextNode("work"));
+    l3.appendChild(document.createTextNode("about"));
+    l4.appendChild(document.createTextNode("services"));
+    l6.appendChild(document.createTextNode("123-456-7890"))
+
+   
+    const linkcontact = document.createElement("a");
+    const linkcontactText = document.createTextNode("contact us");
+
+    linkcontact.appendChild(linkcontactText);
+
+    linkcontact.href="www.google.com";
+    l5.appendChild(linkcontact);
+
+    l1.appendChild(home);
+
+    name.appendChild(nameis);
+
+    ul.appendChild(l1);
+    ul.appendChild(l2);
+    ul.appendChild(l3);
+    ul.appendChild(l4);
+    ul.appendChild(l5);
+    ul.appendChild(l6);
+
+
+    // navbar.appendChild(logo);
+    navbar.appendChild(name);
+
+    navbar.appendChild(ul);
+
+
+
+    document.getElementById("jsdom").appendChild(navbar);
+    // styling navbar
+    // navbar.style.display="flex";
+    name.style.fontFamily="arial";
+    name.style.marginLeft="100px";
+    name.style.fontSize="30px";
+    name.style.display="block";
+    // name.style.
+
+    // logo
+    logo.style.height="60px";
+    logo.style.width="60px";
+    logo.style.display="flex";
+
+    ul.style.listStyle="none";
+    ul.style.marginLeft="600px";
+    ul.style.marginTop="-50px";
+    ul.style.fontSize="24px";
+    ul.style.fontFamily="arial";    
+    ul.style.display="flex";
+
+    l1.style.padding="24px";
+    l2.style.padding="24px";
+    l3.style.padding="24px";
+    l4.style.padding="24px";
+    l5.style.padding="24px";
+    l6.style.padding="24px";
+
+    linkcontact.style.textDecoration="none";
+    linkcontact.style.color="black";
+    // image
+    // front
+
+    const front = document.createElement("div");
+
+    const imgFront = document.createElement("img");
+    const textFront = document.createElement("h1"); 
+
+    textFront.appendChild(document.createTextNode("Exceptional Home Remodeling & Renovations"));
+
+    imgFront.src = "https://static.wixstatic.com/media/74f558_66357e0ecfea4c86b2ea0bce6e8a9447~mv2.jpg/v1/fill/w_980,h_860,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_66357e0ecfea4c86b2ea0bce6e8a9447~mv2.jpg";
+
+    
+    
+    front.appendChild(imgFront);
+    front.appendChild(textFront);
+
+    // front style
+
+    // front.className="container";
+    // front.classList.add=("bg-primary");
+
+    front.classList.add("container");
+
+    // front.style.display="inline"; 
+
+    front.style.marginLeft="100px"; 
+    front.style.justifyContent="center";
+    front.style.paddingBottom="150px";
+    front.style.marginBottom="100px";
+    // front.style.position="absolute";
+
+    imgFront.style.height="90%";
+    imgFront.style.width="90%";
+    imgFront.style.zIndex="-1";
+    imgFront.style.overflow="scroll";
+    // imgFront.style.position="relative";
+  
+    
+    textFront.style.fontFamily=("arial");
+    textFront.style.fontSize="100px";
+    textFront.style.zIndex="1";
+    textFront.style.marginTop="-600px";
+    textFront.style.marginLeft="100px"
+    // textFront.style.marginBottom="600px";
+    textFront.style.color="white";
+    textFront.style.width="900px";
+    // textFront.style.position="absolute";    
+    // textFront.style.marginBottom="240px"
+   
+
+
+    document.getElementById("jsdom").appendChild(front);
+
+//    The Leading Bay Area Remodeling Company
+
+    const lead = document.createElement("div");
+
+    const imgLead = document.createElement("img");
+    const leadText = document.createElement("div");
+    const leadHeading = document.createElement("h1");
+    const leadPara = document.createElement("p");
+    const leadBtn =  document.createElement("btn");
+
+    imgLead.src= "https://static.wixstatic.com/media/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg/v1/fill/w_490,h_680,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_59a5515ed0ea48efb3f1a7e3ce3098cc~mv2.jpeg";
+
+    leadHeading.appendChild(document.createTextNode("The Leading Bay Area Remodeling Company"));
+    leadPara.appendChild(document.createTextNode("I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font"));
+    leadBtn.appendChild(document.createTextNode("More About Us"));
+
+    leadText.appendChild(leadHeading);
+    leadText.appendChild(leadPara);
+    leadText.appendChild(leadBtn);
+
+    lead.appendChild(imgLead);
+    lead.appendChild(leadText);
+
+    document.getElementById("jsdom").appendChild(lead);
+
+    // style leading
+    lead.style.marginLeft="100px";
+    lead.style.display="flex";
+    lead.style.fontFamily="sans-serif";
+    
+    imgLead.style.width="1000px";
+    leadText.style.marginLeft="24px";
+
+    leadHeading.style.fontSize="60px";
+    leadHeading.style.fontWeight="600";
+    leadHeading.style.fontFamily="sans-serif";
+
+    leadPara.style.fontSize="24px";
+    leadPara.style.width="650px";
+    leadPara.style.color="gray";
+    leadPara.style.fontWeight="100px";
+    // leadPara.style.paddingBottom="100px";
+    leadPara.style.marginBottom="150px";
+
+
+    leadBtn.style.fontSize="24px"
+    leadBtn.style.color="white";
+    leadBtn.style.backgroundColor="black";
+    leadBtn.style.padding="15px 30px";
+
+    leadBtn.addEventListener("mouseover", function(){ leadBtn.style.backgroundColor="orange"; 
+    leadBtn.style.cursor="pointer";});
+
+    leadBtn.addEventListener("mouseout", function(){ leadBtn.style.backgroundColor="black";});
+
+
+
+    // why us
+
+    const why = document.createElement("div");
+    
+    const whyHeading = document.createElement("h1");
+    whyHeading.appendChild(document.createTextNode("Why Choose Us"));
+
+    const whyAllCards  = document.createElement("div");
+
+    const whyCard1 = document.createElement("div");
+    const whyCard2 = document.createElement("div");
+    const whyCard3 = document.createElement("div");
+    const whyCard4 = document.createElement("div");
+
+    
+    const whyCard1Heading = document.createElement("h2");
+    const whyCard2Heading = document.createElement("h2");
+    const whyCard3Heading = document.createElement("h2");
+    const whyCard4Heading = document.createElement("h2");
+
+    const whyCard1Text = document.createElement("p");
+    const whyCard2Text = document.createElement("p");
+    const whyCard3Text = document.createElement("p");
+    const whyCard4Text = document.createElement("p");
+
+    whyCard1Heading.appendChild(document.createTextNode("Easy"+ "\n" + "Financing"));
+    whyCard2Heading.appendChild(document.createTextNode("Free, At Home Consultations"));
+    whyCard3Heading.appendChild(document.createTextNode("Award Winning Service"));
+    whyCard4Heading.appendChild(document.createTextNode("Licensed & Insured"));
+
+    whyCard1Text.appendChild(document.createTextNode("I'm a paragraph. Click here to add your own text."));
+    whyCard2Text.appendChild(document.createTextNode("I'm a paragraph. Click here to add your own text."));
+    whyCard3Text.appendChild(document.createTextNode("I'm a paragraph. Click here to add your own text."));
+    whyCard4Text.appendChild(document.createTextNode("I'm a paragraph. Click here to add your own text."));
+
+    whyCard1.appendChild(whyCard1Heading);
+    whyCard1.appendChild(whyCard1Text);
+
+    whyCard2.appendChild(whyCard2Heading);
+    whyCard2.appendChild(whyCard2Text);
+
+    whyCard3.appendChild(whyCard3Heading);
+    whyCard3.appendChild(whyCard3Text);
+
+    whyCard4.appendChild(whyCard4Heading);
+    whyCard4.appendChild(whyCard4Text);
+
+    whyAllCards.appendChild(whyCard1);
+    whyAllCards.appendChild(whyCard2);
+    whyAllCards.appendChild(whyCard3);
+    whyAllCards.appendChild(whyCard4);
+
+    why.appendChild(whyHeading)
+    why.appendChild(whyAllCards);
+
+    document.getElementById("jsdom").appendChild(why);
+    // style
+
+    why.style.cssText="font-family: sans-serif; margin-top:100px; margin-bottom:60px";
+    whyHeading.style.cssText="text-align: center; font-size: 60px";
+
+    whyAllCards.style.cssText=" display:flex; margin-left: 60px; padding-right:24px;";
+
+    whyCard1.style.cssText="padding:60px 24px";
+    whyCard2.style.cssText="padding:60px 24px";
+    whyCard3.style.cssText="padding:60px 24px";
+    whyCard4.style.cssText="padding:60px 24px";
+
+
+    whyCard1Heading.style.cssText="color : #A26028; font-size: 32px; text-align:center";
+    whyCard2Heading.style.cssText="color : #A26028; font-size: 32px; text-align:center";
+    whyCard3Heading.style.cssText="color : #A26028; font-size: 32px; text-align:center";
+    whyCard4Heading.style.cssText="color : #A26028; font-size: 32px; text-align:center";
+
+    // load animation - preloader
+    
+    whyCard1Text.style.cssText="font-size:24px; text-align:center; margin-left:-44px; padding-top:60px";
+    whyCard2Text.style.cssText="font-size:24px; text-align:center; margin-left:-44px; padding-top:24px";
+    whyCard3Text.style.cssText="font-size:24px; text-align:center; margin-left:-44px; padding-top:24px";
+    whyCard4Text.style.cssText="font-size:24px; text-align:center; margin-left:-44px; padding-top:60px";
+
+
+
+    // OUR services
+
+    const services = document.createElement("div");
+    
+    const servicesHeading = document.createElement("h1");
+    servicesHeading.appendChild(document.createTextNode("Our Services Include"));
+
+    const servicesAllCards  = document.createElement("div");
+
+    const servicesCard1 = document.createElement("div");
+    const servicesCard2 = document.createElement("div");
+    const servicesCard3 = document.createElement("div");
+
+    const servicesCard1img = document.createElement("img");
+    const servicesCard2img = document.createElement("img");
+    const servicesCard3img = document.createElement("img");
+
+    const servicesCard1Text = document.createElement("p");
+    const servicesCard2Text = document.createElement("p");
+    const servicesCard3Text = document.createElement("p");
+
+    const servicesBtn =  document.createElement("btn");
+
+    servicesCard1img.src="https://static.wixstatic.com/media/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg/v1/fill/w_536,h_1271,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_993f041afc4045c69c824d6022d78ca0~mv2_d_4000_2667_s_4_2.jpeg";
+
+    servicesCard2img.src="https://static.wixstatic.com/media/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg/v1/fill/w_529,h_1271,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_4ef3f401e4a2400a8979c42d1a7ba1a7~mv2_d_5760_3840_s_4_2.jpeg";
+
+    servicesCard3img.src="https://static.wixstatic.com/media/74f558_9b1cc2c7424d47bf83b890c15ed8127f~mv2_d_5625_3750_s_4_2.jpg/v1/fill/w_529,h_1271,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_9b1cc2c7424d47bf83b890c15ed8127f~mv2_d_5625_3750_s_4_2.jpg";
+
+    servicesCard1Text.appendChild(document.createTextNode(" Kitchens "));
+    servicesCard2Text.appendChild(document.createTextNode("Bathrooms"));
+    servicesCard3Text.appendChild(document.createTextNode("Interiors"));
+
+    servicesBtn.appendChild(document.createTextNode("See All Services"));
+
+    servicesCard1.appendChild(servicesCard1img);
+    servicesCard1.appendChild(servicesCard1Text);
+
+    servicesCard2.appendChild(servicesCard2img);
+    servicesCard2.appendChild(servicesCard2Text);
+
+    servicesCard3.appendChild(servicesCard3img);
+    servicesCard3.appendChild(servicesCard3Text);
+
+
+    servicesAllCards.appendChild(servicesCard1);
+    servicesAllCards.appendChild(servicesCard2);
+    servicesAllCards.appendChild(servicesCard3);
+
+    services.appendChild(servicesHeading);
+    services.appendChild(servicesAllCards);
+    services.appendChild(servicesBtn);
+
+    document.getElementById("jsdom").appendChild(services);
+
+    // styling  OUR services
+
+    
+    services.style.cssText="font-family: sans-serif; padding-top:100px; margin-bottom:60px ;background-color:#dbdbdb40; display: block;  height: 1200px";
+    servicesHeading.style.cssText="text-align: center; font-size: 60px";
+
+    servicesAllCards.style.cssText=" display:flex; margin-left: 60px; padding-right:24px; margin-bottom:100px";
+
+    // width: 306px; height: 726px;
+    servicesCard1.style.cssText="padding:60px 24px ; ";
+    servicesCard2.style.cssText="padding:60px 24px ; " ;
+    servicesCard3.style.cssText="padding:60px 24px ; " ;
+
+    servicesCard1img.style.cssText="width: 400px; height: 726px; padding-right:15px ; z-index:-1";
+    servicesCard2img.style.cssText="width: 400px; height: 726px; padding-right:15px ; z-index:-1";
+    servicesCard3img.style.cssText="width: 400px; height: 726px; z-index:-1";
+
+    servicesCard1Text.style.cssText="font-size:30px; font-weight:600; text-align:center;  color:white; z-index:1; margin-top:-400px";
+    servicesCard2Text.style.cssText="font-size:30px; font-weight:600; text-align:center;  color:white; z-index:1; margin-top:-400px";
+    servicesCard3Text.style.cssText="font-size:30px; font-weight:600; text-align:center;  color:white; z-index:1; margin-top:-400px";
+
+    servicesBtn.style.cssText=" font-size:24px; color:white; background-color:black ; padding:15px 30px; position: absolute; text:align:center;  align-items:center; transform-origin: 500px 500px; margin-top:250px ;margin-left:40%";
+    
+    servicesBtn.addEventListener("mouseover", function(){ servicesBtn.style.backgroundColor="orange"; 
+    servicesBtn.style.cursor="pointer";});
+
+    servicesBtn.addEventListener("mouseout", function(){ servicesBtn.style.backgroundColor="black";});
+
+    // Satisfied Customers -Testimonial;
+    
+    // https://i.pinimg.com/564x/cd/09/bd/cd09bda0df616d9feaa5d58fe1d692ad.jpg
+
+    const testimonial = document.createElement("div");
+    
+    const testimonialHeading = document.createElement("h1");
+    testimonialHeading.appendChild(document.createTextNode("Satisfied Customers"));
+
+    const testimonialAllCards  = document.createElement("div");
+
+    const testimonialCard1 = document.createElement("div");
+    const testimonialCard2 = document.createElement("div");
+    const testimonialCard3 = document.createElement("div");
+
+    const testimonialCard1img = document.createElement("img");
+    const testimonialCard2img = document.createElement("img");
+    const testimonialCard3img = document.createElement("img");
+
+    const testimonialCard1Text = document.createElement("p");
+    const testimonialCard2Text = document.createElement("p");
+    const testimonialCard3Text = document.createElement("p");
+
+    const testimonialCard1Name = document.createElement("h2");
+    const testimonialCard2Name = document.createElement("h2");
+    const testimonialCard3Name = document.createElement("h2");
+
+
+   
+
+    testimonialCard1img.src="https://i.pinimg.com/564x/cd/09/bd/cd09bda0df616d9feaa5d58fe1d692ad.jpg";
+
+    testimonialCard2img.src="https://i.pinimg.com/564x/cd/09/bd/cd09bda0df616d9feaa5d58fe1d692ad.jpg";
+
+    testimonialCard3img.src="https://i.pinimg.com/564x/cd/09/bd/cd09bda0df616d9feaa5d58fe1d692ad.jpg";
+
+
+    testimonialCard1Text.appendChild(document.createTextNode(" “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.” "));
+    testimonialCard2Text.appendChild(document.createTextNode(" “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.” "));
+    testimonialCard3Text.appendChild(document.createTextNode(" “I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are.” "));
+    
+    testimonialCard1Name.appendChild(document.createTextNode(" Dave Reddington "));
+    testimonialCard2Name.appendChild(document.createTextNode("Amelia Banks"));
+    testimonialCard3Name.appendChild(document.createTextNode("Kenny Stutes"));
+
+
+    testimonialCard1.appendChild(testimonialCard1img);
+    testimonialCard1.appendChild(testimonialCard1Text);
+    testimonialCard1.appendChild(testimonialCard1Name);
+
+    testimonialCard2.appendChild(testimonialCard2img);
+    testimonialCard2.appendChild(testimonialCard2Text);
+    testimonialCard2.appendChild(testimonialCard2Name);
+
+    testimonialCard3.appendChild(testimonialCard3img);
+    testimonialCard3.appendChild(testimonialCard3Text);
+    testimonialCard3.appendChild(testimonialCard3Name);
+
+
+    testimonialAllCards.appendChild(testimonialCard1);
+    testimonialAllCards.appendChild(testimonialCard2);
+    testimonialAllCards.appendChild(testimonialCard3);
+
+
+    testimonial.appendChild(testimonialHeading);
+    testimonial.appendChild(testimonialAllCards);
+
+    document.getElementById("jsdom").appendChild(testimonial);
+
+    // Satisfied Customers -Testimonial Styling
+
+    testimonial.style.cssText="font-family: sans-serif; padding-top:80px; margin-bottom:60px ; display: block;";
+    testimonialHeading.style.cssText="text-align: center; font-size: 60px";
+
+    testimonialAllCards.style.cssText=" display:flex; margin-left: 60px; padding-right:24px; margin-bottom:100px";
+
+    // width: 306px; height: 726px;
+    testimonialCard1.style.cssText="padding:60px 24px ; ";
+    testimonialCard2.style.cssText="padding:60px 24px ; " ;
+    testimonialCard3.style.cssText="padding:60px 24px ; " ;
+
+    testimonialCard1img.style.cssText="width: 60px; height: 60px; align-items:center; text-align:center; margin-left:200px";
+    testimonialCard2img.style.cssText="width: 60px; height: 60px; align-items:center; text-align:center; margin-left:200px ";
+    testimonialCard3img.style.cssText="width: 60px; height: 60px; align-items:center; text-align:center; margin-left:200px ";
+
+    testimonialCard1Text.style.cssText="font-size:26px; font-weight:100; line-height:1.75;  text-align:center; width:420px; padding-top:60px";
+    testimonialCard2Text.style.cssText="font-size:26px; font-weight:100; line-height:1.75;  text-align:center; width:420px; padding-top:60px";
+    testimonialCard3Text.style.cssText="font-size:26px; font-weight:100; line-height:1.75;  text-align:center; width:420px; padding-top:60px";
+
+
+    testimonialCard1Name.style.cssText="font-size:30px; font-weight:660; text-align:center;  color:#a26028; ";
+    testimonialCard2Name.style.cssText="font-size:30px; font-weight:660; text-align:center;  color:#a26028; ";
+    testimonialCard3Name.style.cssText="font-size:30px; font-weight:660; text-align:center;  color:#a26028; ";
+
+
+
+
+
+    // footer
+    const footer =document.createElement("footer");
+    const footerLeft = document.createElement("div");
+    const footerRight = document.createElement("div");
+
+    const footerLeftHeading = document.createElement("h1");
+    const footerLeftText = document.createElement("p");
+
+    const footerLeftServiceAreas = document.createElement("h2");
+    const footerLeftServiceAddress = document.createElement("p");
+
+    const footerLeftEmail = document.createElement("p");
+    const footerLeftPhno = document.createElement("p");
+
+    footerLeftHeading.appendChild(document.createTextNode("Let's Discuss Your Next Project"));
+    footerLeftText.appendChild(document.createTextNode("Fill out the form, or call us to set up a free in-home consultation."));
+    footerLeftServiceAreas.appendChild(document.createTextNode("Service Areas:"));
+    footerLeftServiceAddress.appendChild(document.createTextNode("San Francisco, Santa Clara, Alameda, San Mateo  500 Terry Francine Street San Francisco, CA 94158"));
+    footerLeftEmail.append(document.createTextNode("info@mysite.com"));
+    footerLeftPhno.appendChild(document.createTextNode("123-456-7890"));
+
+
+    footerLeft.appendChild(footerLeftHeading);
+    footerLeft.appendChild(footerLeftText);
+    footerLeft.appendChild(footerLeftServiceAreas);
+    footerLeft.appendChild(footerLeftServiceAddress);
+    footerLeft.appendChild(footerLeftEmail);
+    footerLeft.appendChild(footerLeftPhno);
+
+    footer.appendChild(footerLeft);
+    footer.appendChild(footerRight);
+
+    document.getElementById("jsdom").appendChild(footer);
+
+
+    // footer styling
+    footer.style.cssText=" display:flex; color: white; background-color:black; font-family: sans-serif; padding:100px 60px";
+    footerLeft.style.cssText="padding-left:60px";
+    footerLeftHeading.style.cssText="font-size:60px; ";
+    footerLeftText.style.cssText="font-size:24px;"
+    footerLeftServiceAreas.style.cssText="font-size:28px;";
+    footerLeftServiceAddress.style.cssText="font-size:24px;";
+    footerLeftEmail.style.cssText="font-size:24px;";
+    footerLeftPhno.style.cssText="font-size:24px;";
+
+    // clients
+
+    const clients = document.createElement("div");
+    const client1img = document.createElement("img");
+    const client2img = document.createElement("img");
+    const client3img = document.createElement("img");
+    const client4img = document.createElement("img");
+
+    client1img.src="https://static.wixstatic.com/media/74f558_44098c0fb5d64ba592b1790b84ea40c9~mv2.png/v1/fill/w_222,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/icon%201.png";
+
+    client2img.src="https://static.wixstatic.com/media/74f558_c7e99b00c1394a748aca2342d598cb19~mv2.png/v1/fill/w_245,h_202,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Hom3.png";
+
+    client3img.src="https://static.wixstatic.com/media/74f558_8cd094474d6a4aefa45a3179bffa3351~mv2.png/v1/fill/w_245,h_202,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/100.png";
+
+    client4img.src="https://static.wixstatic.com/media/74f558_e75332ece7294e10b9c07ae6a0b4f844~mv2.png/v1/fill/w_245,h_202,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/74f558_e75332ece7294e10b9c07ae6a0b4f844~mv2.png";
+
+    clients.appendChild(client1img);
+    clients.appendChild(client2img);
+    clients.appendChild(client3img);
+    clients.appendChild(client4img);
+
+    document.getElementById("jsdom").appendChild(clients);
+
+    // clients styling
+    clients.style.cssText=" display:flex; margin-left: 60px;  justify-content:space-around; padding-top:100px";
+
+    // client1img.style.cssText="padding-right:80px"
+
+
+
+
+
+
+</script>
+
+</html>
